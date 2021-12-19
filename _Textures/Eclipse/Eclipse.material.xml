@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Materials xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Material>
+        <Name>orig_orig_orig_19 - Default</Name>
+        <DiffuseFile>eclipse2003-diffuse-red.tga</DiffuseFile>
+        <SpecularFile>eclipse2003-spec-red.tga</SpecularFile>
+        <NormalFile>eclipse2003-normalmap.tga</NormalFile>
+        <Ambient R="0.588" G="0.588" B="0.588" A="1"/>
+        <Diffuse R="0.588" G="0.588" B="0.588" A="1"/>
+        <Specular R="0.89999998" G="0.89999998" B="0.89999998" A="2"/>
+    </Material>
+    <Material>
+        <Name>20 - Default</Name>
+        <DiffuseFile>wheel-diffuse.tga</DiffuseFile>
+        <SpecularFile>wheel-spec.tga</SpecularFile>
+        <NormalFile>wheel-normalsmap.tga</NormalFile>
+        <Ambient R="0.588" G="0.588" B="0.588" A="1"/>
+        <Diffuse R="0.588" G="0.588" B="0.588" A="1"/>
+        <Specular R="0.89999998" G="0.89999998" B="0.89999998" A="2"/>
+    </Material>
+</Materials>

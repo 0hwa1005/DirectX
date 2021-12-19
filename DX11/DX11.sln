@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Framework.vcxproj", "{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcxproj", "{70E5D289-8734-48E9-AE87-3437773EB4AC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0} = {DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{232276FF-9EC9-4627-894B-31BBAD20753E}"
+	ProjectSection(SolutionItems) = preProject
+		..\_Shaders\000_Header.fx = ..\_Shaders\000_Header.fx
+		..\_Shaders\000_Light.fx = ..\_Shaders\000_Light.fx
+		..\_Shaders\000_Model.fx = ..\_Shaders\000_Model.fx
+		..\_Shaders\000_Terrain.fx = ..\_Shaders\000_Terrain.fx
+		..\_Shaders\001_Vertex.fx = ..\_Shaders\001_Vertex.fx
+		..\_Shaders\002_Rect.fx = ..\_Shaders\002_Rect.fx
+		..\_Shaders\003_World.fx = ..\_Shaders\003_World.fx
+		..\_Shaders\004_Quad.fx = ..\_Shaders\004_Quad.fx
+		..\_Shaders\005_Texture.fx = ..\_Shaders\005_Texture.fx
+		..\_Shaders\006_Terrain.fx = ..\_Shaders\006_Terrain.fx
+		..\_Shaders\007_Mesh.fx = ..\_Shaders\007_Mesh.fx
+		..\_Shaders\008_Texture.fx = ..\_Shaders\008_Texture.fx
+		..\_Shaders\009_Terrain.fx = ..\_Shaders\009_Terrain.fx
+		..\_Shaders\010_Terrain.fx = ..\_Shaders\010_Terrain.fx
+		..\_Shaders\011_Terrain.fx = ..\_Shaders\011_Terrain.fx
+		..\_Shaders\012_TerrainGridLine.fx = ..\_Shaders\012_TerrainGridLine.fx
+		..\_Shaders\013_Terrain_Splatting.fx = ..\_Shaders\013_Terrain_Splatting.fx
+		..\_Shaders\014_Model.fx = ..\_Shaders\014_Model.fx
+		..\_Shaders\015_Mesh.fx = ..\_Shaders\015_Mesh.fx
+		..\_Shaders\016_Model.fx = ..\_Shaders\016_Model.fx
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelExport", "ModelExport\ModelExport.vcxproj", "{DF84A26D-F12C-44AA-9331-3774C859ECB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0} = {DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Debug|x64.ActiveCfg = Debug|x64
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Debug|x64.Build.0 = Debug|x64
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Debug|x86.Build.0 = Debug|Win32
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Release|x64.ActiveCfg = Release|x64
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Release|x64.Build.0 = Release|x64
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Release|x86.ActiveCfg = Release|Win32
+		{DE299EA8-EFB5-45EF-BDBF-C5323EE603A0}.Release|x86.Build.0 = Release|Win32
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Debug|x64.ActiveCfg = Debug|x64
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Debug|x64.Build.0 = Debug|x64
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Debug|x86.ActiveCfg = Debug|Win32
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Debug|x86.Build.0 = Debug|Win32
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Release|x64.ActiveCfg = Release|x64
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Release|x64.Build.0 = Release|x64
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Release|x86.ActiveCfg = Release|Win32
+		{70E5D289-8734-48E9-AE87-3437773EB4AC}.Release|x86.Build.0 = Release|Win32
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Debug|x64.ActiveCfg = Debug|x64
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Debug|x64.Build.0 = Debug|x64
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Debug|x86.ActiveCfg = Debug|Win32
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Debug|x86.Build.0 = Debug|Win32
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Release|x64.ActiveCfg = Release|x64
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Release|x64.Build.0 = Release|x64
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Release|x86.ActiveCfg = Release|Win32
+		{DF84A26D-F12C-44AA-9331-3774C859ECB7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78D7216B-6919-4499-8683-34D3FD1F6B67}
+	EndGlobalSection
+EndGlobal
