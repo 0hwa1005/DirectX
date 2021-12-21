@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="MeshDemo">
+    <Filter Include="Demo">
       <UniqueIdentifier>{7d5b53db-7465-4966-b1b1-586a172758e9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -36,8 +36,11 @@
     <ClCompile Include="DrawTexture2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MeshDemo\MeshDemo.cpp">
-      <Filter>MeshDemo</Filter>
+    <ClCompile Include="Demo\BillboardDemo.cpp">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo\MeshDemo.cpp">
+      <Filter>Demo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +65,11 @@
     <ClInclude Include="DrawTexture2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MeshDemo\MeshDemo.h">
-      <Filter>MeshDemo</Filter>
+    <ClInclude Include="Demo\BillboardDemo.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo\MeshDemo.h">
+      <Filter>Demo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

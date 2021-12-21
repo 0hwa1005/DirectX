@@ -22,6 +22,7 @@
     <ClInclude Include="Buffers\ConstantBuffer.h" />
     <ClInclude Include="Buffers\IndexBuffer.h" />
     <ClInclude Include="Buffers\VertexBuffer.h" />
+    <ClInclude Include="Environment\Billboard.h" />
     <ClInclude Include="Environment\Terrain.h" />
     <ClInclude Include="Framework.h" />
     <ClInclude Include="Meshes\Mesh.h" />
@@ -64,6 +65,7 @@
     <ClCompile Include="Buffers\ConstantBuffer.cpp" />
     <ClCompile Include="Buffers\IndexBuffer.cpp" />
     <ClCompile Include="Buffers\VertexBuffer.cpp" />
+    <ClCompile Include="Environment\Billboard.cpp" />
     <ClCompile Include="Environment\Terrain.cpp" />
     <ClCompile Include="Meshes\Mesh.cpp" />
     <ClCompile Include="Meshes\MeshCube.cpp" />

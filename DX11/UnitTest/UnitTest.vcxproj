@@ -123,6 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Demo\BillboardDemo.cpp" />
+    <ClCompile Include="Demo\MeshDemo.cpp" />
     <ClCompile Include="DrawMesh.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -131,9 +133,10 @@
     <ClCompile Include="DrawTexture2.cpp" />
     <ClCompile Include="DrawVertex.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MeshDemo\MeshDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Demo\BillboardDemo.h" />
+    <ClInclude Include="Demo\MeshDemo.h" />
     <ClInclude Include="DrawMesh.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
@@ -142,7 +145,6 @@
     <ClInclude Include="DrawTexture2.h" />
     <ClInclude Include="DrawVertex.h" />
     <ClInclude Include="Main.h" />
-    <ClInclude Include="MeshDemo\MeshDemo.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

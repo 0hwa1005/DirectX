@@ -6,7 +6,9 @@
 //#include "DrawTerrain.h"
 //#include "DrawMesh.h"
 //#include "DrawTexture2.h"
-#include "MeshDemo/MeshDemo.h"
+//#include "Demo/MeshDemo.h"
+#include "Viewer//FreeCam.h"
+#include "Demo/BillboardDemo.h"
 
 void Main::Initialize()
 {
@@ -15,7 +17,10 @@ void Main::Initialize()
 	//Push(new DrawTerrain());
 	//Push(new DrawMesh());
 	//Push(new DrawTexture2());
-	Push(new MeshDemo());
+	//Push(new MeshDemo());
+
+	((FreeCam*)Context::Get()->GetCamera())->Speed(100, 2.5f);
+	Push(new BillboardDemo());
 }
 
 void Main::Ready()
