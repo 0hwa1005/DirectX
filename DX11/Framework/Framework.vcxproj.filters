@@ -148,6 +148,7 @@
     <ClInclude Include="Environment\Billboard.h">
       <Filter>Environment</Filter>
     </ClInclude>
+    <ClInclude Include="Environment\Sky.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Viewer\Orthographic.cpp">
@@ -264,5 +265,6 @@
     <ClCompile Include="Environment\Billboard.cpp">
       <Filter>Environment</Filter>
     </ClCompile>
+    <ClCompile Include="Environment\Sky.cpp" />
   </ItemGroup>
 </Project>

@@ -15,7 +15,8 @@ class BillboardDemo : public IExecute
 	virtual void ResizeScreen() override {};
 
 private:
-	class Billboard* billboard;
+	class Billboard*	billboard;
+	class Sky*			sky;
 
 	UINT meshPass = 0;
 	UINT modelPass = 1;
@@ -36,5 +37,7 @@ private:
 
 	Model*			model;
 	ModelRender*	modelRender;
+
+	
 };
 
