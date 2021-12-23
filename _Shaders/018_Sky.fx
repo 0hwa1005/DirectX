@@ -20,6 +20,12 @@ float4 PS(MeshOutput input) : SV_Target0
     return float4(0.3f, 0.4f, 0.8f, 1.0f);
 }
 
+float4 PS_CubeMap(MeshOutput input) : SV_Target0
+{
+    return SkyCubeMap.Sample(LinearSampler, input.oPosition);
+
+}
+
 RasterizerState RS
 {
     //FillMode = Wireframe;
@@ -42,4 +48,5 @@ technique11 T0
     //P_VP(P0, VS_Mesh, PS)
     P_RS_DSS_VP(P0, RS, DS, VS_Mesh, PS)
     P_RS_DSS_VP(P1, RS2, DS, VS_Mesh, PS)
+    P_RS_DSS_VP(P2, RS, DS, VS_Mesh, PS_CubeMap)
 }

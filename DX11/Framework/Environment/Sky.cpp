@@ -2,6 +2,7 @@
 #include "Sky.h"
 
 Sky::Sky()
+	: cubeSRV(NULL)
 {
 	shader = new Shader(L"018_Sky.fx");
 	buffer = new ConstantBuffer(&desc, sizeof(Desc));
@@ -14,6 +15,21 @@ Sky::~Sky()
 	SafeDelete(shader);
 	SafeDelete(sphere);
 	SafeDelete(buffer);
+}
+
+Sky::Sky(wstring cubebeMapFile)
+{
+	shader = new Shader(L"018_Sky.fx");
+	buffer = new ConstantBuffer(&desc, sizeof(Desc));
+	sBuffer = shader->AsConstantBuffer("CB_Sky");
+	sphere = new MeshSphere(shader, 0.5f);
+
+	sphere->GetTransform()->Scale(1000, 1000, 1000);
+	sphere->Pass(2);
+
+	wstring temp = L"../../_Textures/" + cubebeMapFile;
+	Check(D3DX11CreateShaderResourceViewFromFile(D3D::GetDevice(), temp.c_str(), NULL, NULL, &cubeSRV, NULL));
+	sCubeSRV = shader->AsSRV("SkyCubeMap");
 }
 
 void Sky::Update()
@@ -34,6 +50,6 @@ void Sky::Render()
 {
 	buffer->Apply();
 	sBuffer->SetConstantBuffer(buffer->Buffer());
-	//sphere->Pass(1);//wireFrame
+	sCubeSRV->SetResource(cubeSRV);
 	sphere->Render();
 }

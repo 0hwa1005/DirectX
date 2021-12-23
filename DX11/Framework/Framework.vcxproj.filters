@@ -148,7 +148,12 @@
     <ClInclude Include="Environment\Billboard.h">
       <Filter>Environment</Filter>
     </ClInclude>
-    <ClInclude Include="Environment\Sky.h" />
+    <ClInclude Include="Environment\Sky.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment\Rain.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Viewer\Orthographic.cpp">
@@ -265,6 +270,11 @@
     <ClCompile Include="Environment\Billboard.cpp">
       <Filter>Environment</Filter>
     </ClCompile>
-    <ClCompile Include="Environment\Sky.cpp" />
+    <ClCompile Include="Environment\Sky.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment\Rain.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

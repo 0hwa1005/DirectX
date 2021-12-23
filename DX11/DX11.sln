@@ -34,6 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{23
 		..\_Shaders\016_Model.fx = ..\_Shaders\016_Model.fx
 		..\_Shaders\017_Billboard.fx = ..\_Shaders\017_Billboard.fx
 		..\_Shaders\018_Sky.fx = ..\_Shaders\018_Sky.fx
+		..\_Shaders\019_Weather.fx = ..\_Shaders\019_Weather.fx
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelExport", "ModelExport\ModelExport.vcxproj", "{DF84A26D-F12C-44AA-9331-3774C859ECB7}"

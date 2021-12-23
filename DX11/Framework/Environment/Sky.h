@@ -4,6 +4,7 @@ class Sky
 public:
 	Sky();
 	~Sky();
+	Sky(wstring cubebeMapFile);
 
 private:
 	struct Desc
@@ -20,6 +21,9 @@ private:
 
 	ConstantBuffer* buffer;
 	ID3DX11EffectConstantBuffer* sBuffer;
+
+	ID3D11ShaderResourceView* cubeSRV;
+	ID3DX11EffectShaderResourceVariable* sCubeSRV;
 
 public:
 	void Update();

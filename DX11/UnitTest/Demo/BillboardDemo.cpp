@@ -18,7 +18,8 @@ void BillboardDemo::Initialize()
 		billboard->Scale(10, 10, 10);
 	}
 
-	sky = new Sky();
+	//sky = new Sky();
+	sky = new Sky(L"Environment/SnowCube1024.dds");
 
 	// : mesh
 	floor = new Material(shader);

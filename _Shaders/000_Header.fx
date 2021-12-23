@@ -18,6 +18,7 @@ cbuffer CB_World
 Texture2D DiffuseMap;
 Texture2D SpecularMap;
 Texture2D NormalMap;
+TextureCube SkyCubeMap;
 
 SamplerState Sampler;
 
