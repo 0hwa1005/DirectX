@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="Demo\BillboardDemo.cpp" />
     <ClCompile Include="Demo\MeshDemo.cpp" />
+    <ClCompile Include="Demo\WeatherDemo.cpp" />
     <ClCompile Include="DrawMesh.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="Demo\BillboardDemo.h" />
     <ClInclude Include="Demo\MeshDemo.h" />
+    <ClInclude Include="Demo\WeatherDemo.h" />
     <ClInclude Include="DrawMesh.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>

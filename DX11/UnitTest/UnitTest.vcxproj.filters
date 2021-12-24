@@ -42,6 +42,9 @@
     <ClCompile Include="Demo\MeshDemo.cpp">
       <Filter>Demo</Filter>
     </ClCompile>
+    <ClCompile Include="Demo\WeatherDemo.cpp">
+      <Filter>Demo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -69,6 +72,9 @@
       <Filter>Demo</Filter>
     </ClInclude>
     <ClInclude Include="Demo\MeshDemo.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo\WeatherDemo.h">
       <Filter>Demo</Filter>
     </ClInclude>
   </ItemGroup>

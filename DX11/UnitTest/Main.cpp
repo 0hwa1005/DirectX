@@ -9,6 +9,7 @@
 //#include "Demo/MeshDemo.h"
 #include "Viewer//FreeCam.h"
 #include "Demo/BillboardDemo.h"
+#include "Demo/WeatherDemo.h"
 
 void Main::Initialize()
 {
@@ -20,7 +21,8 @@ void Main::Initialize()
 	//Push(new MeshDemo());
 
 	((FreeCam*)Context::Get()->GetCamera())->Speed(100, 2.5f);
-	Push(new BillboardDemo());
+	//Push(new BillboardDemo());
+	Push(new WeatherDemo());
 }
 
 void Main::Ready()
